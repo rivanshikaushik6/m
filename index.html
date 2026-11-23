@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Surprise For You ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. Welcome Section -->
+    <div class="welcome-container">
+
+        <div class="heart">♡</div>
+
+        <h1>Happy Birthday, My Favourite Human!</h1>
+
+        <p>
+            Today is all about you.
+            I made something special just for you.
+        </p>
+
+        <button id="surpriseBtn">
+            Open Your Surprise ♡
+        </button>
+
+    </div>
+
+
+    <!-- 2. Gift Surprise Section -->
+    <div class="gift-container hidden" id="giftSection">
+
+        <h1>A Little Gift For You! 🎀</h1>
+
+        <p>Because someone as special as you deserves a surprise.</p>
+
+        <button class="gift-box" id="giftBox">
+            🎁
+        </button>
+
+        <p class="gift-hint">Click your gift to open it! ♡</p>
+
+        <div class="gift-message hidden" id="giftMessage">
+
+            <h2>Surprise!! ❤️</h2>
+
+            <p>
+                If I could wrap all my love into a gift,
+                this would still not be big enough.
+                Happy Birthday, my favourite person!
+            </p>
+
+            <button id="continueBtn">
+                There's More For You ♡
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- 3. Reasons I Love You Section -->
+    <div class="reasons-container hidden" id="reasonsSection">
+
+        <h1>Little Reasons Why I Love You ♡</h1>
+
+        <p>Tap each heart to discover a little secret.</p>
+
+        <div class="reasons-grid">
+
+            <button class="reason-card"
+                data-message="You make even my ordinary days feel special. ♡">
+                💗
+                <span>Reason 1</span>
+            </button>
+
+            <button class="reason-card"
+                data-message="Your smile is one of my favourite things in this world. ♡">
+                💗
+                <span>Reason 2</span>
+            </button>
+
+            <button class="reason-card"
+                data-message="You make me laugh even when I don't feel like smiling. ♡">
+                💗
+                <span>Reason 3</span>
+            </button>
+
+            <button class="reason-card"
+                data-message="I love how comfortable I can be around you. ♡">
+                💗
+                <span>Reason 4</span>
+            </button>
+
+            <button class="reason-card"
+                data-message="You make distance feel a little less difficult. ♡">
+                💗
+                <span>Reason 5</span>
+            </button>
+
+            <button class="reason-card"
+                data-message="Simply because you're YOU. And that's my favourite thing. ♡">
+                💗
+                <span>Reason 6</span>
+            </button>
+
+        </div>
+
+        <div id="reasonMessage" class="reason-message hidden"></div>
+
+        <button id="storyBtn" class="story-btn">
+            Read Our Little Story ♡
+        </button>
+
+    </div>
+
+
+    <!-- 4. Our Little Story Section -->
+    <div class="story-container hidden" id="storySection">
+
+        <h1>Our Little Story ♡</h1>
+
+        <p>Some moments become our favourite memories.</p>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-heart">♡</div>
+
+                <h2>Chapter 1 — Ek School Change</h2>
+
+                <p>
+                    Class 10 mein meri best friend ne apna school
+                    change kiya. Mujhe kya pata tha ki uska school
+                    change karna meri love story ka starting point
+                    ban jayega!
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-heart">♡</div>
+
+                <h2>Chapter 2 — An Unexpected Connection</h2>
+
+                <p>
+                    Naye school mein Bhumika ki mulaqat Madhwan
+                    se hui. Dono friends ban gaye aur Instagram
+                    par bhi connect ho gaye.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-heart">♡</div>
+
+                <h2>Chapter 3 — That One Story</h2>
+
+                <p>
+                    Ek din Bhumika ne apni Instagram story par
+                    mere saath picture post ki. Madhwan ne woh
+                    story dekhi aur usse main bahut pretty lagi.
+                    Aur bas, uski chasing shuru!
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-heart">♡</div>
+
+                <h2>Chapter 4 — The First Message</h2>
+
+                <p>
+                    Main Bhumika se Madhwan ke baare mein baat
+                    karne lagi. Usne kaha ki woh ek achha ladka
+                    hai. Phir ek din maine hi usse Instagram
+                    par message kar diya. ♡
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-heart">♡</div>
+
+                <h2>Chapter 5 — And Then Came Us</h2>
+
+                <p>
+                    Dheere-dheere baatein badhi, feelings aayi
+                    aur hum relationship mein aa gaye.
+                    Aur ab humein saath mein 3 years ho gaye hain!
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-heart">♡</div>
+
+                <h2>Chapter 6 — My Favourite Plot Twist</h2>
+
+                <p>
+                    Ek school change, ek Instagram story aur
+                    ek random message... aur mujhe tum mil gaye.
+                    I'm so glad humari kahani shuru hui.
+                    Happy Birthday, my love! ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+        <button id="finalBtn" class="story-btn">
+            One Last Thing... 💌
+        </button>
+
+    </div>
+
+
+    <!-- 5. Final Birthday Message Section -->
+    <div class="final-container hidden" id="finalSection">
+
+        <div class="final-heart">💗</div>
+
+        <h1>One Last Thing...</h1>
+
+        <div class="final-letter">
+
+            <h2>To My Madhwan ❤️</h2>
+
+            <p>
+                Madhwan, I don't know how to put all my feelings
+                into words, but I want you to know how special
+                you are to me.
+            </p>
+
+            <p>
+                Three years ago, ek random Instagram message se
+                shuru hui humari kahani meri life ka one of the
+                most beautiful parts ban gayi.
+            </p>
+
+            <p>
+                We've had so many little moments, laughs,
+                silly fights and memories. I may not be able
+                to meet you today or celebrate your birthday
+                by your side, but please know that I'm
+                celebrating you with all my heart.
+            </p>
+
+            <p>
+                I wish I could hug you right now and tell you
+                all this in person.
+            </p>
+
+            <p>
+                Happy Birthday, my love!
+                I love you more than these words can ever explain.
+                Here's to us and many more birthdays together. ♡
+            </p>
+
+            <h2>Forever Yours, ❤️</h2>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

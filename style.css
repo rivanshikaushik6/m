@@ -1,0 +1,289 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff0f5;
+    font-family: Georgia, serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-container {
+    text-align: center;
+    padding: 30px;
+    max-width: 650px;
+}
+
+.heart {
+    font-size: 75px;
+    color: #ff6b9d;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #d94f82;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #8c5269;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+button {
+    background: #ff82aa;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e75480;
+    transform: scale(1.05);
+}
+
+/* Floating hearts */
+
+.heart {
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Background floating hearts */
+
+.floating-heart {
+    position: fixed;
+    bottom: -50px;
+    color: #ff82aa;
+    font-size: 25px;
+    animation: floatUp 6s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+
+/* Hide sections */
+
+.hidden {
+    display: none !important;
+}
+
+/* Gift section */
+
+.gift-container {
+    text-align: center;
+    padding: 30px;
+    max-width: 650px;
+}
+
+.gift-box {
+    font-size: 100px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    animation: giftBounce 1.5s infinite;
+}
+
+@keyframes giftBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.gift-hint {
+    color: #d94f82;
+    margin-top: 15px;
+}
+
+.gift-message {
+    margin-top: 30px;
+    padding: 25px;
+    background: #ffe0eb;
+    border-radius: 20px;
+    animation: appear 1s ease;
+}
+
+.gift-message h2 {
+    color: #d94f82;
+    margin-bottom: 15px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Reasons section */
+
+.reasons-container {
+    text-align: center;
+    padding: 30px 20px;
+    max-width: 750px;
+}
+
+.reasons-container h1 {
+    font-size: 35px;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.reason-card {
+    background: #ffe0eb;
+    color: #d94f82;
+    padding: 25px 10px;
+    border: 2px solid #ffb6cc;
+    border-radius: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reason-card span {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.reason-card:hover {
+    transform: translateY(-8px);
+    background: #ffc6d9;
+}
+
+.reason-message {
+    background: #ffe0eb;
+    color: #b83e70;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 25px;
+    font-size: 19px;
+    animation: appear 0.5s ease;
+}
+
+@media (max-width: 500px) {
+    .reasons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reasons-container h1 {
+        font-size: 27px;
+    }
+}
+
+/* Our Little Story */
+
+.story-container {
+    max-width: 650px;
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.timeline {
+    margin: 40px auto;
+    border-left: 3px solid #ff9fbd;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    background: #ffe0eb;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    animation: appear 0.7s ease;
+}
+
+.timeline-heart {
+    position: absolute;
+    left: -43px;
+    top: 20px;
+    background: #ff82aa;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.timeline-item h2 {
+    color: #d94f82;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.timeline-item p {
+    color: #8c5269;
+    font-size: 15px;
+    margin: 0;
+}
+
+.story-btn {
+    margin-top: 25px;
+}
+.timeline-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 20px rgba(217, 79, 130, 0.15);
+}
+
+.timeline-heart {
+    box-shadow: 0 0 10px rgba(255, 130, 170, 0.4);
+}
